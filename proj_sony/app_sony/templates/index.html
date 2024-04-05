@@ -1,0 +1,355 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
+
+  <title>Home</title>
+  
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,600,700&display=swap" rel="stylesheet" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+
+  <!-- responsive style -->
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <div class="hero_bg_box">
+      <div class="img-box">
+        <img src="{% static 'images/sony.jpg' %}" alt="">
+      </div>
+    </div>
+
+    <header class="header_section">
+      <div class="header_top">
+        <div class="container-fluid">
+          <div class="contact_link-container">
+            <a href="" class="contact_link1">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                Porto, Portugal
+              </span>
+            </a>
+            <a href="" class="contact_link2">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                Contacte: +351 914103482
+              </span>
+            </a>
+            <a href="" class="contact_link3">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>
+                geral@centrosony.com.pt
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+            <a class="navbar-brand" href="{% url 'home' %}">
+              <span>
+                Sony Corporation
+              </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""></span>
+            </button>
+
+            <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'about' %}"> Sobre nós</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'service' %}"> Os nossos Produtos </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'guard' %}"> Merchandise </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'contact' %}">Contacta-nos</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class=" slider_section ">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="detail-box">
+                    <h1>
+                      Os nossos projetos
+                    </h1>
+                    <p>
+                      A Sony Corporation é conhecida por seus projetos de sucesso, incluindo o popular jogo Last of Us, que é um dos principais títulos no mundo dos jogos. Além disso, a empresa lançou God of War, um shooter tático competitivo, e está expandindo seu universo com projetos como Arcane, uma série de animação baseada em League of Legends. A Sony continua a inovar no cenário de jogos e entretenimento.
+                    </p>
+                    <div class="btn-box">
+                      <a href="" class="btn-1"> Read more </a>
+                      <a href="" class="btn-2">Get A Quote</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="detail-box">
+                    <h1>
+                      Os nossos Developers 
+                    </h1>
+                    <p>
+                    A Sony conta com uma equipa de desenvolvedores talentosos e apaixonados que são os cérebros por trás de jogos de sucesso como Last of Us e God of War. Esses desenvolvedores se destacam pela sua dedicação à inovação, equilíbrio de jogabilidade e criação de experiências imersivas para milhões de jogadores em todo o mundo. Eles desempenham um papel fundamental na evolução contínua dos jogos da Sony, mantendo-os emocionantes e relevantes no cenário dos jogos online.
+                    </p>
+                    <div class="btn-box">
+                      <a href="" class="btn-1"> Read more </a>
+                      <a href="" class="btn-2">Get A Quote</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="detail-box">
+                    <h1>
+                      Os nossos colaboradores
+                    </h1>
+                    <p>
+                      A Sony é conhecida por oferecer uma gama de benefícios excepcionais aos seus funcionários, que incluem assistência médica abrangente, planos de aposentadoria sólidos, licenças parentais generosas e oportunidades de desenvolvimento profissional. Além disso, a empresa promove uma cultura de bem-estar e inclusão, incentivando um ambiente de trabalho saudável e diversificado para todos os seus colaboradores.
+                    </p>
+                    <div class="btn-box">
+                      <a href="" class="btn-1"> Read more </a>
+                      <a href="" class="btn-2">Get A Quote</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container idicator_container">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <!-- client section -->
+
+  <section class="client_section layout_padding">
+    <div class="container ">
+      <div class="heading_container heading_center">
+        <h2>
+          Os nossos colaboradores
+        </h2>
+      </div>
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="box">
+              <div class="img-box">
+                <img src="{% static 'images/marcelo.jpg' %}">
+              </div>
+              <div class="detail-box">
+                <h4>
+                  Marcelo Carriço - Engenheiro de Software
+                </h4>
+                <p>
+                  Marcelo é um Engenheiro de Software excepcional, conhecido pela sua habilidade inata de transformar conceitos complexos em produtos de software funcionais e intuitivos. A sua mente analítica e criativa torna-o uma peça fundamental na nossa equipa, trazendo sempre soluções inovadoras para os desafios tecnológicos que enfrentamos. A sua ética de trabalho incansável e compromisso com a excelência inspiram os seus colegas de equipe a alcançarem o seu melhor desempenho. Ele é uma verdadeira força da natureza no nosso ambiente de desenvolvimento.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="box">
+              <div class="img-box">
+                <img src="{% static 'images/douglas.jpg' %}" alt="">
+              </div>
+              <div class="detail-box">
+                <h4>
+                  Douglas Santos - Engenheiro de Software
+                </h4>
+                <p>
+                  Douglas é um Engenheiro de Software dedicado e apaixonado, com uma profunda compreensão das complexidades do desenvolvimento de software. A sua abordagem metódica para resolver problemas e sua habilidade de traduzir requisitos complexos em código eficiente tornam-o um dos membros mais confiáveis da nossa equipa. Além das suas habilidades técnicas exemplares, ele também é conhecido pela sua atitude colaborativa e capacidade de liderança, contribuindo significativamente para a coesão e o progresso de nossos projetos.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="box">
+              <div class="img-box">
+                <img src="{% static 'images/marco.jpg' %}" alt="">
+              </div>
+              <div class="detail-box">
+                <h4>
+                  Marco Gonçalves - Engenheiro de Software de Inteligência Artificial
+                </h4>
+                <p>
+                  Marco é um Engenheiro de Software de Inteligência Artificial talentoso e versátil, capaz de enfrentar desafios técnicos com uma calma notável e determinação inabalável. Tem a capacidade de se adaptar rapidamente a novas tecnologias e a sua disposição para assumir responsabilidades desafiadoras tornam-o um pilar essencial no nosso departamento de desenvolvimento. A sua atitude pró-ativa e habilidades de comunicação eficaz fortalecem a colaboração em equipa, criando um ambiente de trabalho inspirador e produtivo para todos ao seu redor.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="box">
+              <div class="img-box">
+                <img src="{% static 'images/carol.jpg' %}" alt="">
+              </div>
+              <div class="detail-box">
+                <h4>
+                  Caroline Trombeta - Designer de Jogos (Ex-Colaboradora)
+                </h4>
+                <p>
+                  Carol é uma engenheira de software altamente talentosa, reconhecida pela sua mente inovadora e habilidades técnicas excepcionais. A sua abordagem meticulosa para resolver problemas complexos e sua capacidade de encontrar soluções elegantes para desafios difíceis a destacam como uma das líderes na nossa equipa. Além da sua perícia técnica, ela é admirada pela sua capacidade de motivar e inspirar os seus colegas, promovendo uma cultura inclusiva e colaborativa que impulsiona o sucesso de todos os envolvidos. A sua presença é fundamental para o crescimento e progresso contínuo da nossa equipa de desenvolvimento de software.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel_btn-box">
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end client section -->
+
+  <!-- info section -->
+  <section class="info_section ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="info_logo">
+            <a class="navbar-brand" href="{% url 'home' %}">
+              <span>
+                Copyright Information
+              </span>
+            </a>
+            <p>
+              This website has been created by a student and is intended for non-commercial purposes
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_info">
+            <h5>
+              Contacte-nos
+            </h5>
+          </div>
+          <div class="info_contact">
+            <a href="" class="">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                Rua nº17 Campo de Flores,
+              </span>
+            </a>
+            <a href="" class="">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                Contacto: 914103482
+              </span>
+            </a>
+            <a href="" class="">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>
+                geral@centrosony.com.pt 
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_form ">
+            <h5>
+              Newsletter
+            </h5>
+            <form action="#">
+              <input type="email" placeholder="Enter your email">
+              <button>
+                Subscreve!
+              </button>
+            </form>
+            <div class="social_box">
+              <a href="https://www.facebook.com/RiotGames/">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="https://twitter.com/riotgames">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.youtube.com/riotgames">
+                <i class="fa fa-youtube" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.instagram.com/riotgames/">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info_section -->
+  <!-- footer section -->
+  <footer class="container-fluid footer_section">
+    <p>
+      &copy; <span id="currentYear"></span> DMM Corporation</a>
+    </p>
+  </footer>
+  <!-- footer section -->
+
+  <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.js' %}"></script>
+  <script src="{% static 'js/custom.js' %}"></script>
+</body>
+
+</html>

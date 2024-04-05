@@ -1,0 +1,151 @@
+<!Doctype HTML>
+	<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" href="app_vegan/static/css/style.css" type="text/css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+
+
+	<body>
+		
+		<div id="mySidenav" class="sidenav">
+		<p class="logo"><span>J</span>-MDM</p>
+	  <a href="#" class="icon-a"><i class="fa fa-dashboard icons"></i>   Dashboard</a>
+
+
+	</div>
+	<div id="main">
+
+		<div class="head">
+			<div class="col-div-6">
+	<span style="font-size:30px;cursor:pointer; color: white;" class="nav"  >☰ Dashboard</span>
+	<span style="font-size:30px;cursor:pointer; color: white;" class="nav2"  >☰ Dashboard</span>
+	</div>
+		
+
+		<div class="clearfix"></div>
+	</div>
+
+		<div class="clearfix"></div>
+		<br/>
+		
+		<div class="col-div-3">
+			<div class="box">
+				<p>0<br/><span>Clientes</span></p>
+				<i class="fa fa-users box-icon"></i>
+			</div>
+		</div>
+		<div class="col-div-3">
+			<div class="box">
+				<p>0<br/><span>Produtos</span></p>
+				<i class="fa fa-list box-icon"></i>
+			</div>
+		</div>
+		<div class="col-div-3">
+			<div class="box">
+				<p>0<br/><span>Encomendas</span></p>
+				<i class="fa fa-shopping-bag box-icon"></i>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<br/><br/>
+		<div class="col-div-8">
+			<div class="box-8">
+			<div class="content-box">
+				<p>Produtos mais vendidos</p>
+				<br/>
+				<table>
+	  <tr>
+	    <th>Produto</th>
+	    <th>Preço</th>
+	    <th>Lucro Bruto</th>
+	  </tr>
+	  <tr>
+	    <td>RISOTO DE COGUMELOS E ERVAS</td>
+	    <td>16€</td>
+	    <td>0.8€</td>
+	  </tr>
+	  <tr>
+	    <td>ESPAGUETE DE ABOBRINHA COM PESTO DE MANJERICÃO</td>
+	    <td>11€</td>
+	    <td>0.55€</td>
+	  </tr>
+	  <tr>
+	    <td>TIGELAS DE GRÃO-DE-BICO ASSADO COM LEGUMES</td>
+	    <td>12€</td>
+	    <td>0.6€</td>
+	  </tr>
+	  <tr>
+	    <td>CURRY DE LENTILHAS E VEGETAIS</td>
+	    <td>9€</td>
+	    <td>0.45€</td>
+	  </tr>
+	  <tr>
+	    <td>HAMBÚRGUER DE QUINOA E BETERRABA</td>
+	    <td>12€</td>
+	    <td>0.6€</td>
+	  </tr>
+	  
+	</table>
+			</div>
+		</div>
+		</div>
+
+		<div class="col-div-4">
+			<div class="box-4">
+			<div class="content-box">
+				<p>Lucro Liquido</p>
+
+				<div class="circle-wrap">
+	    <div class="circle">
+
+	      <div class="mask full">
+	        <div class="fill"></div>
+	      </div>
+	      <div class="mask half">
+	        <div class="fill"></div>
+	      </div>
+	      <div class="inside-circle"> 0 </div>
+	    </div>
+	  </div>
+			</div>
+		</div>
+		</div>
+			
+		<div class="clearfix"></div>
+	</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+
+	  $(".nav").click(function(){
+	    $("#mySidenav").css('width','70px');
+	    $("#main").css('margin-left','70px');
+	    $(".logo").css('visibility', 'hidden');
+	    $(".logo span").css('visibility', 'visible');
+	     $(".logo span").css('margin-left', '-10px');
+	     $(".icon-a").css('visibility', 'hidden');
+	     $(".icons").css('visibility', 'visible');
+	     $(".icons").css('margin-left', '-8px');
+	      $(".nav").css('display','none');
+	      $(".nav2").css('display','block');
+	  });
+
+	$(".nav2").click(function(){
+	    $("#mySidenav").css('width','300px');
+	    $("#main").css('margin-left','300px');
+	    $(".logo").css('visibility', 'visible');
+	     $(".icon-a").css('visibility', 'visible');
+	     $(".icons").css('visibility', 'visible');
+	     $(".nav").css('display','block');
+	      $(".nav2").css('display','none');
+	 });
+
+	</script>
+
+	</body>
+
+
+	</html>

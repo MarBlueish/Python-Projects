@@ -1,0 +1,189 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegan Essence</title>
+    <link rel="stylesheet" href="{% static '/css/app.css' %}">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css" />
+    <script src="https://unpkg.com/scrollreveal@4.0.0-beta.6"></script>
+
+
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="top-menu  scroll-reveal">
+                    <div class="menu">
+                       
+
+                        <nav id="main-nav" data-animate="menu-in menu-out">
+                            <ul class="main-navigation">                                                         
+                                <li><a class="m-anim" href="{% url 'index' %}"  data-text="Contact">Home</a></li>                               
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        </div>
+
+    </header>
+
+ 
+
+    <section id="specials-grid" class="month-specials" data-scroll-reveal="enter from the bottom after 0.9s">
+        <div class="container">
+            <h1 class="header-txt">Especiais deste mês</h1>
+            <div class="divider">
+                <?xml version="1.0" encoding="utf-8"?>
+                <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1930 255.5" style="enable-background:new 0 0 1930 255.5;" xml:space="preserve">
+                                <style type="text/css">
+                                    .st0{fill:none;stroke:#3c3c3c;stroke-width:10;stroke-linecap:square;stroke-miterlimit:10;}
+                                </style>
+                                <polyline class="st0" points="1224,171.8 1181.3,171.8 1139.2,129.6 1065,203.9 970.5,110.4 876,203.6 801.8,129.4 759.7,171.5 
+                                    717,171.5 "/>
+                                <polyline class="st0" points="5,131.5 757.3,131.5 801.8,176.1 885.9,91.9 868.3,74.2 831.5,111 870.4,149.9 970.2,50.2 1070,149.9 
+                                    1108.8,111 1072.1,74.2 1054.4,91.9 1138.5,176.1 1183.1,131.5 1925,131.5 "/>
+                                <rect x="921.9" y="26.7" transform="matrix(0.7071 -0.7071 0.7071 0.7071 231.426 707.2043)" class="st0" width="95" height="95"/>
+                                <rect x="921.9" y="99.7" transform="matrix(0.7071 -0.7071 0.7071 0.7071 179.8072 728.5855)" class="st0" width="95" height="95"/>
+                                <rect x="940.3" y="178.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 137.3893 746.1556)" class="st0" width="58.2" height="58.2"/>
+                                </svg>
+            </div>
+            <!--.divider-->
+            <div class="specials-content">
+                <div class="special">
+                    <div class="special-img img-01">
+                        <img src="{% static 'assets/img/special-1.png' %}">
+                    </div>
+                    <div class="special-items spec-01">
+                        <h2 class="scroll-reveal" data-origin="top" data-distance="20%">Massa de Abóbora com Molho Assado</h2>
+                        <span class="line scroll-reveal" data-origin="top" data-distance="20%"></span>
+                        <p class="scroll-reveal" data-origin="bottom" data-distance="30%">Massa de abóbora com molho de tomate assado, harmonizando doçura e riqueza</p>
+                        <span class="scroll-reveal" data-origin="bottom" data-distance="60%">15€</span>
+                    </div>
+                </div>
+                <!--.special-->
+                <div class="special">
+                    <div class="special-img img-02">
+                        <img src="{% static 'assets/img/special-2.png' %}">
+                    </div>
+                    <div class="special-items spec-02">
+                        <h2 class="scroll-reveal" data-origin="top" data-distance="20%">Tigela de Quinoa com Vegetais Grelhados</h2>
+                        <span class="line scroll-reveal" data-origin="top" data-distance="20%"></span>
+                        <p class="scroll-reveal" data-origin="bottom" data-distance="30%">Quinoa, vegetais grelhados, regados com molho de limão e ervas</p>
+                        <span class="scroll-reveal" data-origin="bottom" data-distance="60%">14€</span>
+                    </div>
+                </div>
+                <!--.special-->
+                <div class="special">
+                    <div class="special-img img-03">
+                        <img src="{% static 'assets/img/special-3.png' %}">
+                    </div>
+                    <div class="special-items spec-03">
+                        <h2 class="scroll-reveal" data-origin="top" data-distance="20%">Curry de Grão-de-Bico e Espinafre</h2>
+                        <span class="line scroll-reveal" data-origin="top" data-distance="20%"></span>
+                        <p class="scroll-reveal" data-origin="bottom" data-distance="30%">Grão-de-bico, espinafre em curry de especiarias indianas</p>
+                        <span class="scroll-reveal" data-origin="bottom" data-distance="60%">7€</span>
+                    </div>
+                </div>
+                <!--.special-->
+                <div class="special">
+                    <div class="special-items spec-04">
+                        <h2 class="scroll-reveal" data-origin="top" data-distance="20%">Hambúrguer de Feijão Preto com Abacate</h2>
+                        <span class="line scroll-reveal" data-origin="top" data-distance="20%"></span>
+                        <p class="scroll-reveal" data-origin="bottom" data-distance="30%">Hambúrguer vegano de feijão preto, aveia, abacate em pão integral</p>
+                        <span class="scroll-reveal" data-origin="bottom" data-distance="60%">13€</span>
+                    </div>
+                    <div class="static/special-img img-04">
+                        <img src="{% static 'assets/img/special-4.png' %}">
+                    </div>
+                </div>
+                <!--.special-->
+                <div class="special">
+                    <div class="special-items spec-05">
+                        <h2 class="scroll-reveal" data-origin="top" data-distance="20%">Salada de Quinoa Mediterrânea</h2>
+                        <span class="line scroll-reveal" data-origin="top" data-distance="20%"></span>
+                        <p class="scroll-reveal" data-origin="bottom" data-distance="30%">Quinoa, tomate, pepino, azeitonas, hortelã com molho mediterrâneo</p>
+                        <span class="scroll-reveal" data-origin="bottom" data-distance="60%">11€</span>
+                    </div>
+                    <div class="special-img img-05">
+                        <img src="{% static 'assets/img/special-5.png' %}">
+                    </div>
+                </div>
+                <!--.special-->
+                <div class="special">
+                    <div class="special-items spec-06">
+                        <h2 class="scroll-reveal" data-origin="top" data-distance="20%">Tacos Veganos de Lentilhas</h2>
+                        <span class="line scroll-reveal" data-origin="top" data-distance="20%"></span>
+                        <p class="scroll-reveal" data-origin="bottom" data-distance="30%">Tortilhas recheadas com lentilhas temperadas, guacamole fresco, e coentro</p>
+                        <span class="scroll-reveal" data-origin="bottom" data-distance="60%">6€</span>
+                    </div>
+                    <div class="special-img img-06">
+                        <img src="{% static 'assets/img/special-6.png' %}">
+                    </div>
+                </div>
+                <!--.special-->
+            </div>
+            <!--.specials-content-->
+        </div>
+        <!--.container-->
+    </section>
+    <!--.month-specials-->
+
+   
+    </section>
+    <!--.about-->
+
+
+
+    <a href="#0" class="cd-top">Top</a>
+
+  
+
+    <div id="preloader">
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/what-input/5.0.2/what-input.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.js"></script>
+    <script src="js/app.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+    <script type="text/javascript">
+        $('.slider').slick({
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 3500,
+            arrows: false,
+            fade: true,
+            cssEase: 'linear'
+        });
+
+    </script>
+
+    <script>
+        $(window).on('load', function() {
+            $("#preloader").fadeOut();
+        });
+    </script>
+
+</body>
+
+</html>
